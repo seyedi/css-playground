@@ -1,5 +1,30 @@
 @media all{html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;vertical-align:baseline}
 
+@-webkit-keyframes rotate {
+	0% { -webkit-transform: rotate(0deg);}
+	100% { -webkit-transform: rotate(360deg);}
+}	
+
+@-moz-keyframes rotate {
+	0% { -moz-transform: rotate(0deg);}
+	100% { -moz-transform: rotate(360deg);}
+}	
+
+@-ms-keyframes rotate {
+	0% { -ms-transform: rotate(0deg);}
+	100% { -ms-transform: rotate(360deg);}
+}	
+
+@-o-keyframes rotate {
+	0% { -o-transform: rotate(0deg);}
+	100% { -o-transform: rotate(360deg);}
+}	
+
+@keyframes rotate {
+	0% { transform: rotate(0deg);}
+	100% { transform: rotate(360deg);}
+}	
+
 .cover:before,.cover:after{content:" ";display:table}
 
 body {
@@ -180,8 +205,16 @@ div.h-pointer {
 	width  : 10px;
 	height : 100px;
 
-	-webkit-transform        :rotate(300deg);
+	-webkit-animation        : rotate 84600s infinite linear;
 	-webkit-transform-origin : 50% 76%;
+	-moz-animation           : rotate 84600s infinite linear;
+	-moz-transform-origin    : 50% 76%;
+	-ms-animation            : rotate 84600s infinite linear;
+	-ms-transform-origin     : 50% 76%;
+	-o-animation             : rotate 84600s infinite linear;
+	-o-transform-origin      : 50% 76%;
+	animation                : rotate 84600s infinite linear;
+	transform-origin         : 50% 76%;
 	background : rgb(69,72,77); /* Old browsers */
 	background : -moz-linear-gradient(left,  rgba(69,72,77,1) 0%, rgba(0,0,0,1) 100%); /* FF3.6+ */
 	background : -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(69,72,77,1)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
@@ -190,8 +223,6 @@ div.h-pointer {
 	background : -ms-linear-gradient(left,  rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%); /* IE10+ */
 	background : linear-gradient(to right,  rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%); /* W3C */
 	filter     : progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
-
-
 }
 
 div.m-pointer {
@@ -200,8 +231,16 @@ div.m-pointer {
 	left  : 182px;
 	top   : 10px;
 
-	-webkit-transform        :rotate(60deg);
+	-webkit-animation        : rotate 3600s infinite linear;
 	-webkit-transform-origin : 50% 84%;
+	-moz-animation           : rotate 3600s infinite linear;
+	-moz-transform-origin    : 50% 84%;
+	-ms-animation            : rotate 3600s infinite linear;
+	-ms-transform-origin     : 50% 84%;
+	-o-animation             : rotate 3600s infinite linear;
+	-o-transform-origin      : 50% 84%;
+	animation                : rotate 3600s infinite linear;
+	transform-origin         : 50% 84%;
 	background : rgb(174,188,191); /* Old browsers */
 	background : -moz-linear-gradient(top,  rgba(174,188,191,1) 0%, rgba(110,119,116,1) 31%, rgba(48,48,48,1) 31%, rgba(15,15,15,1) 100%); /* FF3.6+ */
 	background : -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(174,188,191,1)), color-stop(31%,rgba(110,119,116,1)), color-stop(31%,rgba(48,48,48,1)), color-stop(100%,rgba(15,15,15,1))); /* Chrome,Safari4+ */
@@ -219,8 +258,25 @@ div.s-pointer {
 	left  : 183px;
 	top   : 10px;
 
-	-webkit-transform        :rotate(180deg);
+	background : rgb(0,0,0); /* Old browsers */
+	background : -moz-linear-gradient(top,  rgba(0,0,0,1) 1%, rgba(0,0,0,1) 30%, rgba(161,188,115,1) 30%, rgba(205,235,142,1) 100%); /* FF3.6+ */
+	background : -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(0,0,0,1)), color-stop(30%,rgba(0,0,0,1)), color-stop(30%,rgba(161,188,115,1)), color-stop(100%,rgba(205,235,142,1))); /* Chrome,Safari4+ */
+	background : -webkit-linear-gradient(top,  rgba(0,0,0,1) 1%,rgba(0,0,0,1) 30%,rgba(161,188,115,1) 30%,rgba(205,235,142,1) 100%); /* Chrome10+,Safari5.1+ */
+	background : -o-linear-gradient(top,  rgba(0,0,0,1) 1%,rgba(0,0,0,1) 30%,rgba(161,188,115,1) 30%,rgba(205,235,142,1) 100%); /* Opera 11.10+ */
+	background : -ms-linear-gradient(top,  rgba(0,0,0,1) 1%,rgba(0,0,0,1) 30%,rgba(161,188,115,1) 30%,rgba(205,235,142,1) 100%); /* IE10+ */
+	background : linear-gradient(to bottom,  rgba(0,0,0,1) 1%,rgba(0,0,0,1) 30%,rgba(161,188,115,1) 30%,rgba(205,235,142,1) 100%); /* W3C */
+	filter     : progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#cdeb8e',GradientType=0 ); /* IE6-9 */
+
+	-webkit-animation        : rotate 60s infinite linear;
 	-webkit-transform-origin : 50% 92%;
+	-moz-animation           : rotate 60s infinite linear;
+	-moz-transform-origin    : 50% 92%;
+	-ms-animation            : rotate 60s infinite linear;
+	-ms-transform-origin     : 50% 92%;
+	-o-animation             : rotate 60s infinite linear;
+	-o-transform-origin      : 50% 92%;
+	animation                : rotate 60s infinite linear;
+	transform-origin         : 50% 92%;
 }
 
 div.in div.center {
@@ -245,9 +301,6 @@ div.center > div {
 	border-radius : 6px;
 	margin : auto;
 	margin-top : 4px;
-}
-
-div.s-pointer , div.center > div {
 	background : rgb(165,201,86); /* Old browsers */
 	background : -moz-linear-gradient(top,  rgba(165,201,86,1) 0%, rgba(205,235,142,1) 100%); /* FF3.6+ */
 	background : -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(165,201,86,1)), color-stop(100%,rgba(205,235,142,1))); /* Chrome,Safari4+ */
@@ -257,4 +310,5 @@ div.s-pointer , div.center > div {
 	background : linear-gradient(to bottom,  rgba(165,201,86,1) 0%,rgba(205,235,142,1) 100%); /* W3C */
 	filter     : progid:DXImageTransform.Microsoft.gradient( startColorstr='#a5c956', endColorstr='#cdeb8e',GradientType=0 ); /* IE6-9 */
 }
+
 
