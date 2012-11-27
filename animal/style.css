@@ -1,0 +1,241 @@
+* {
+    margin : 0;
+    padding: 0;
+}
+
+@-moz-keyframes l-ear {
+    0%   {bottom : 200px}
+    100% {bottom : 90%; }
+}
+
+@-webkit-keyframes l-ear {
+    0%   {bottom : 200px;}
+    100% {bottom : 90%; }
+}
+
+@-o-keyframes l-ear {
+    0%   {bottom : 200px}
+    100% {bottom : 90%; }
+}
+
+@-ms-keyframes l-ear {
+    0%   {bottom : 200px}
+    100% {bottom : 90%; }
+}
+
+@-moz-keyframes r-eyebrow {
+    0%   {right  : -100px;}
+    100% {right  : 15% ; }
+}
+
+@-webkit-keyframes r-eyebrow {
+    0%   {right  : -100px;}
+    100% {right  : 15% ; }
+}
+
+@-o-keyframes r-eyebrow {
+    0%   {right  : -100px;}
+    100% {right  : 15% ; }
+}
+
+@-ms-keyframes r-eyebrow {
+    0%   {right  : -100px;}
+    100% {right  : 15% ; }
+}
+
+@-moz-keyframes l-eyebrow {
+    0%   {left  : -100px;}
+    100% {left  : 15% ;  }
+}
+
+@-webkit-keyframes l-eyebrow {
+    0%   {left  : -100px;}
+    100% {left  : 15% ; }
+}
+
+@-o-keyframes l-eyebrow {
+    0%   {left  : -100px;}
+    100% {left  : 15% ; }
+}
+
+@-ms-keyframes l-eyebrow {
+    0%   {left  : -100px;}
+    100% {left  : 15% ; }
+}
+
+@-moz-keyframes nose {
+    0%   {top  : -80px;}
+    100% {top  : 50px; }
+}
+
+@-webkit-keyframes nose {
+    0%   {top  : -80px;}
+    100% {top  : 50px; }
+}
+
+@-o-keyframes nose {
+    0%   {top  : -80px;}
+    100% {top  : 50px; }
+}
+
+@-ms-keyframes nose {
+    0%   {top  : -80px;}
+    100% {top  : 50px; }
+}
+
+@-moz-keyframes mouth {
+    0%   {bottom : -60px;}
+    100% {bottom : 20px;}
+}
+@-webkit-keyframes mouth {
+    0%   {bottom : -60px;}
+    100% {bottom : 20px;}
+}
+@-o-keyframes mouth {
+    0%   {bottom : -60px;}
+    100% {bottom : 20px;}
+}
+@-ms-keyframes mouth {
+    0%   {bottom : -60px;}
+    100% {bottom : 20px;}
+}
+
+body {
+    background-color : #eef;
+}
+
+div.containers {
+    overflow   : hidden;
+    width      : 200px;
+    height     : 200px;
+    margin     : 100px auto;
+    margin-top : 100px;
+    border     : 1px solid #555;
+}
+
+div.face {
+    position : relative;
+    width         : 100px;
+    height        : 100px;
+    border-radius : 10px;
+    margin        : 50px auto;
+    border        : 1px solid #fa5;
+    background: rgb(255,223,193); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(255,223,193,1) 0%, rgba(255,183,107,1) 15%, rgba(255,167,61,1) 31%, rgba(255,124,0,1) 83%, rgba(255,124,0,1) 100%, rgba(255,127,4,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,223,193,1)), color-stop(15%,rgba(255,183,107,1)), color-stop(31%,rgba(255,167,61,1)), color-stop(83%,rgba(255,124,0,1)), color-stop(100%,rgba(255,124,0,1)), color-stop(100%,rgba(255,127,4,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(255,223,193,1) 0%,rgba(255,183,107,1) 15%,rgba(255,167,61,1) 31%,rgba(255,124,0,1) 83%,rgba(255,124,0,1) 100%,rgba(255,127,4,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(255,223,193,1) 0%,rgba(255,183,107,1) 15%,rgba(255,167,61,1) 31%,rgba(255,124,0,1) 83%,rgba(255,124,0,1) 100%,rgba(255,127,4,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(255,223,193,1) 0%,rgba(255,183,107,1) 15%,rgba(255,167,61,1) 31%,rgba(255,124,0,1) 83%,rgba(255,124,0,1) 100%,rgba(255,127,4,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(255,223,193,1) 0%,rgba(255,183,107,1) 15%,rgba(255,167,61,1) 31%,rgba(255,124,0,1) 83%,rgba(255,124,0,1) 100%,rgba(255,127,4,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffdfc1', endColorstr='#ff7f04',GradientType=0 ); /* IE6-9 */
+
+}
+
+div.triangle {
+    width        : 0;
+    height       : 0;
+    border-width : 0 9px 20px 9px;
+    border-style : solid;
+    border-color : #fa5 transparent;
+}
+
+div.face > div {
+    position : absolute;
+}
+
+div.l-ear {
+    left   : 15%;
+    -webkit-animation: l-ear 1s linear 1 normal both;
+    -moz-animation:    l-ear 1s linear 1 normal both;
+    -ms-animation:     l-ear 1s linear 1 normal both;
+     -o-animation:     l-ear 1s linear 1 normal both;
+        animation:     l-ear 1s linear 1 normal both;
+}
+
+div.r-ear {
+    bottom : 90%;
+    right  : 15%;
+}
+
+div.r-eyebrow , div.l-eyebrow{
+    width  : 30px;
+    height : 1px;
+    background-color: #000;
+    top    : 25px;
+}
+
+div.l-eyebrow {
+    -webkit-animation: l-eyebrow 1s linear 1s 1 normal both;
+    -moz-animation:    l-eyebrow 1s linear 1s 1 normal both;
+    -ms-animation:     l-eyebrow 1s linear 1s 1 normal both;
+    -o-animation:      l-eyebrow 1s linear 1s 1 normal both;
+    animation:         l-eyebrow 1s linear 1s 1 normal both;    
+}
+
+div.r-eyebrow {
+    -webkit-animation: r-eyebrow 1s linear 2s 1 normal both;
+    -moz-animation:    r-eyebrow 1s linear 2s 1 normal both;
+    -ms-animation:     r-eyebrow 1s linear 2s 1 normal both;
+    -o-animation:      r-eyebrow 1s linear 2s 1 normal both;
+    animation:         r-eyebrow 1s linear 2s 1 normal both;
+}
+
+div.r-eye , div.l-eye {
+    width : 18px;
+    height: 20px;
+    border-radius : 10px;
+    background-color : #fff;
+    top   : 35px;
+}
+
+div.l-eye {
+    -webkit-animation: l-eyebrow 1s linear 3s 1 normal both;
+    -moz-animation:    l-eyebrow 1s linear 3s 1 normal both;
+    -ms-animation:     l-eyebrow 1s linear 3s 1 normal both;
+    -o-animation:      l-eyebrow 1s linear 3s 1 normal both;
+    animation:         l-eyebrow 1s linear 3s 1 normal both;    
+}
+
+div.face > div > div {
+    width  : 10px;
+    height : 10px;
+    border-radius : 5px;
+    margin        : 5px auto;
+    background-color: #000;
+}
+
+div.r-eye {
+    -webkit-animation: r-eyebrow 1s linear 4s 1 normal both;
+    -moz-animation:    r-eyebrow 1s linear 4s 1 normal both;
+    -ms-animation:     r-eyebrow 1s linear 4s 1 normal both;
+    -o-animation:      r-eyebrow 1s linear 4s 1 normal both;
+    animation:         r-eyebrow 1s linear 4s 1 normal both;
+}
+
+div.nose {
+    width  : 10px;
+    height : 10px;
+    border-radius : 5px;
+    background-color : #555;
+    left : 45px;
+    -webkit-animation: nose 1s linear 5s 1 normal both;
+    -moz-animation:    nose 1s linear 5s 1 normal both;
+    -ms-animation:     nose 1s linear 5s 1 normal both;
+    -o-animation:      nose 1s linear 5s 1 normal both;
+    animation:         nose 1s linear 5s 1 normal both;
+}
+
+div.mouth {
+    width  : 30px;
+    height : 8px;
+    border-style : solid;
+    border-width : 1px 1px 0 1px;
+    border-color : black;
+    left   : 35px;
+    -webkit-animation: mouth 1s linear 6s 1 normal both;
+    -moz-animation:    mouth 1s linear 6s 1 normal both;
+    -ms-animation:     mouth 1s linear 6s 1 normal both;
+    -o-animation:      mouth 1s linear 6s 1 normal both;
+    animation:         mouth 1s linear 6s 1 normal both;
+}
+
