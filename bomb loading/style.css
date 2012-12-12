@@ -1,0 +1,92 @@
+* {
+    margin : 0;
+    padding: 0;
+}
+
+.cover:before,.cover:after{content:" ";display:table}
+
+
+body {
+    background-image: url('1.jpg');
+}
+
+div.containers {
+    position   : relative;
+    width      : 350px;
+    height     : 350px;
+    margin     : 100px auto;
+    margin-top : 100px;
+    border     : 1px solid #eef;
+}
+
+div.bomb {
+    position      : relative;
+    width         : 160px;
+    height        : 160px;
+    margin        : 100px auto;
+    border-radius : 80px;
+    background    : rgb(0,0,0); /* Old browsers */
+    background    : -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,1) 0%, rgba(0,0,0,1) 60%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+    background    : -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(0,0,0,1)), color-stop(60%,rgba(0,0,0,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+    background    : -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 60%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+    background    : -o-radial-gradient(center, ellipse cover,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 60%,rgba(255,255,255,1) 100%); /* Opera 12+ */
+    background    : -ms-radial-gradient(center, ellipse cover,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 60%,rgba(255,255,255,1) 100%); /* IE10+ */
+    background    : radial-gradient(ellipse at center,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 60%,rgba(255,255,255,1) 100%); /* W3C */
+    filter        : progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+div.shadow {
+    width         : 130px;
+    height        : 130px;
+    border-radius : 65px;
+    margin        : 0 10px;
+    background    : rgb(255,255,255); /* Old browsers */
+    background    : -moz-linear-gradient(-70deg,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 15%, rgba(0,0,0,1) 83%); /* FF3.6+ */
+    background    : -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(15%,rgba(255,255,255,1)), color-stop(83%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+    background    : -webkit-linear-gradient(-70deg,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 15%,rgba(0,0,0,1) 83%); /* Chrome10+,Safari5.1+ */
+    background    : -o-linear-gradient(-70deg,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 15%,rgba(0,0,0,1) 83%); /* Opera 11.10+ */
+    background    : -ms-linear-gradient(-70deg,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 15%,rgba(0,0,0,1) 83%); /* IE10+ */
+    background    : linear-gradient(135deg,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 15%,rgba(0,0,0,1) 83%); /* W3C */
+    filter        : progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+div.mouth {
+    position : absolute;
+    top      : -15px;
+    left     : 21px;
+    width    : 50px;
+    height   : 40px;
+    -webkit-transform : rotate(-25deg);
+    -moz-transform    : rotate(-25deg);
+    -o-transform      : rotate(-25deg);
+    -ms-transform     : rotate(-25deg);
+    transform         : rotate(-25deg);
+    border-radius     : 10px;
+    background        : rgb(0,0,0);
+}
+div.mouth > div {
+    position : relative;
+    width  : 50px;
+    height : 20px;
+    background   : #aaa;
+    border-radius: 100px / 50px;
+}
+
+div.mouth div.top {
+    top      : -3px;
+    left     : 0px;
+}
+
+div.top > div {
+    width  : 23px;
+    height : 13px;
+    margin : 3px auto;
+    border-radius: 100px / 50px;
+    background-color: #000;
+}
+
+div.mouth div.bottom {
+    background-color: #000;
+    top      : 3px;
+    left     : 0px;
+}

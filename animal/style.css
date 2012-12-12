@@ -30,7 +30,8 @@
 
 @-webkit-keyframes r-eyebrow {
     0%   {right  : -100px;}
-    100% {right  : 15% ; }
+    10%   {right  : 15% ;}
+    100% { right  : 15% ; -webkit-transform : rotate(-10deg);}
 }
 
 @-o-keyframes r-eyebrow {
@@ -40,7 +41,7 @@
 
 @-ms-keyframes r-eyebrow {
     0%   {right  : -100px;}
-    100% {right  : 15% ; }
+    100% {right  : 15% ;}
 }
 
 @-moz-keyframes l-eyebrow {
@@ -50,7 +51,8 @@
 
 @-webkit-keyframes l-eyebrow {
     0%   {left  : -100px;}
-    100% {left  : 15% ; }
+    10%   {left  : 15% ;}
+    100% { left  : 15% ; -webkit-transform : rotate(10deg);}
 }
 
 @-o-keyframes l-eyebrow {
@@ -165,7 +167,7 @@ div.r-eyebrow , div.l-eyebrow{
 }
 
 div.l-eyebrow {
-    -webkit-animation: l-eyebrow 1s linear 1s 1 normal both;
+    -webkit-animation: l-eyebrow 10s linear 1s 1 normal both;
     -moz-animation:    l-eyebrow 1s linear 1s 1 normal both;
     -ms-animation:     l-eyebrow 1s linear 1s 1 normal both;
     -o-animation:      l-eyebrow 1s linear 1s 1 normal both;
@@ -173,7 +175,7 @@ div.l-eyebrow {
 }
 
 div.r-eyebrow {
-    -webkit-animation: r-eyebrow 1s linear 2s 1 normal both;
+    -webkit-animation: r-eyebrow 10s linear 2s 1 normal both;
     -moz-animation:    r-eyebrow 1s linear 2s 1 normal both;
     -ms-animation:     r-eyebrow 1s linear 2s 1 normal both;
     -o-animation:      r-eyebrow 1s linear 2s 1 normal both;
