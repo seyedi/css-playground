@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+	<title></title>
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css" />
+	<style type="text/css">
+		* {
+			padding : 0;
+			margin  : 0;
+			border  : 0;
+		}
+
+		body {
+			background-color : #333;
+			background-image: url('1.png');
+			padding-top      : 100px;
+		}
+
+		nav {
+			width   : 450px;
+			margin  : auto;
+		}
+
+		menu {
+			list-style-type : none;
+		}
+
+		li {
+			display          : inline-block;
+			margin-left      : 50px;
+			background: rgb(62,62,62); /* Old browsers */
+		    background: -webkit-linear-gradient(rgba(62,62,62,1) 0%, rgba(44,44,44,1) 100%);
+		    background: -o-linear-gradient(rgba(62,62,62,1) 0%, rgba(44,44,44,1) 100%);
+		    background: -moz-linear-gradient(rgba(62,62,62,1) 0%, rgba(44,44,44,1) 100%);
+		    background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(62,62,62,1)), to(rgba(44,44,44,1)));
+		    background: linear-gradient(rgba(62,62,62,1) 0%, rgba(44,44,44,1) 100%); /* FF3.6+ */ /* Chrome,Safari4+ */ /* Chrome10+,Safari5.1+ */ /* Opera 11.10+ */ /* IE10+ */ /* W3C */
+		
+			position         : relative;
+			border-radius : 50%;
+			width         : 80px;
+			height        : 80px;
+			border        : 1px solid #222;
+			text-align    : center;
+		}			
+
+		li:before , li:after {
+			display  : block;
+			content  : " ";
+			position : absolute;
+			z-index  : -1;
+
+			-webkit-transform-origin : 50% 50%;
+			-moz-transform-origin    : 50% 50%;
+			-o-transform-origin      : 50% 50%;
+			-ms-transform-origin     : 50% 50%;
+
+			-webkit-transition : all 0.5s ease-in;
+			-moz-transition    : all 0.5s ease-in;
+			-o-transition      : all 0.5s ease-in;
+			-ms-transition     : all 0.5s ease-in;
+		}
+
+		li:before {
+			width : 90px;
+			height: 2px;
+			background-color: #ff0;
+			left  : -5px;
+			top   : 40px;
+			box-shadow : 0 0 5px 1px #aa0;
+		}
+
+		li:after {
+			width : 2px;
+			height: 90px;
+			background-color: #eee;
+			left  : 40px;
+			top   : -5px;
+			box-shadow : 0 0 5px 1px #eee;
+		}
+
+		li:hover:after ,li:hover:before {
+			-webkit-transform : rotate(90deg);
+			-moz-transform    : rotate(90deg);
+			-o-transform      : rotate(90deg);
+			-ms-transform     : rotate(90deg);
+			transform         : rotate(90deg);
+			-webkit-transition : all 0.5s ease-out;
+			-moz-transition    : all 0.5s ease-out;
+			-o-transition      : all 0.5s ease-out;
+			-ms-transition     : all 0.5s ease-out;
+		}
+
+		a {
+			display         : block;
+			text-decoration : none;
+			font-size       : 40px;
+			color           : #212121;
+			padding         : 15px;
+			border-radius   : 50%;
+		    -webkit-transition : all 0.5s ease-in;
+			-moz-transition    : all 0.5s ease-in;
+			-o-transition      : all 0.5s ease-in;
+			-ms-transition     : all 0.5s ease-in;
+			text-shadow        : 0 0 5px #eee;
+		}
+
+		li:hover a {
+			color              : #aa0;
+			text-shadow        : 0 0 5px #212121;
+			-webkit-transition : all 0.5s ease-out;
+			-moz-transition    : all 0.5s ease-out;
+			-o-transition      : all 0.5s ease-out;
+			-ms-transition     : all 0.5s ease-out;
+		}
+
+	</style>
+
+</head>
+<body>
+	<nav>
+		<menu>
+			<li><a href="#" class="icon-twitter"></a></li>
+			<li><a href="#" class="icon-facebook"></a></li>
+			<li><a href="#" class="icon-github"></a></li>
+		</menu>
+	</nav>
+</body>
+</html>
