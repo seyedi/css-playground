@@ -1,6 +1,5 @@
 ##Pure-CSS
 ========
-making shapes and icons with css , ***just css***
-
+Play with css ^_^
 
 ###az roooooye biiiiiikary :D
