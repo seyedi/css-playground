@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
 	<meta charset="UTF-8" />
-	<title></title>
+	<title>flock login</title>
 	<link href='http://fonts.googleapis.com/css?family=Berkshire+Swash' rel='stylesheet' type='text/css'>
 	<style type="text/css">
 		@import url("http://netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css");
@@ -36,6 +36,7 @@
 			font-size  : 75px;
 			color      : #b8b8b8;
 			font-family: 'Berkshire Swash', cursive;
+			text-shadow: 1px 1px 0 #888; 
 		}
 
 		input {
@@ -49,14 +50,11 @@
 
 		.user , .pass {
 			font-size      : 20px;
-			background: rgb(213,213,213); /* Old browsers */
 			background: -moz-linear-gradient(top,  rgba(213,213,213,1) 0%, rgba(213,213,213,1) 13%, rgba(215,215,215,1) 30%, rgba(222,222,222,1) 71%, rgba(221,221,221,1) 100%); /* FF3.6+ */
 			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(213,213,213,1)), color-stop(13%,rgba(213,213,213,1)), color-stop(30%,rgba(215,215,215,1)), color-stop(71%,rgba(222,222,222,1)), color-stop(100%,rgba(221,221,221,1))); /* Chrome,Safari4+ */
 			background: -webkit-linear-gradient(top,  rgba(213,213,213,1) 0%,rgba(213,213,213,1) 13%,rgba(215,215,215,1) 30%,rgba(222,222,222,1) 71%,rgba(221,221,221,1) 100%); /* Chrome10+,Safari5.1+ */
 			background: -o-linear-gradient(top,  rgba(213,213,213,1) 0%,rgba(213,213,213,1) 13%,rgba(215,215,215,1) 30%,rgba(222,222,222,1) 71%,rgba(221,221,221,1) 100%); /* Opera 11.10+ */
 			background: -ms-linear-gradient(top,  rgba(213,213,213,1) 0%,rgba(213,213,213,1) 13%,rgba(215,215,215,1) 30%,rgba(222,222,222,1) 71%,rgba(221,221,221,1) 100%); /* IE10+ */
-			background: linear-gradient(to bottom,  rgba(213,213,213,1) 0%,rgba(213,213,213,1) 13%,rgba(215,215,215,1) 30%,rgba(222,222,222,1) 71%,rgba(221,221,221,1) 100%); /* W3C */
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d5d5d5', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
 
 			box-shadow: inset 0 0 3px 1px #ccc; 
 
@@ -73,28 +71,29 @@
 			border        : 1px solid #b6733c;
 			box-shadow    : inset 0 0 1px 1px #ffcb9c;
 			text-transform : uppercase;
-			background: rgb(249,159,107); /* Old browsers */
 			background: -moz-linear-gradient(top,  rgba(249,159,107,1) 0%, rgba(238,148,96,1) 57%, rgba(236,146,94,1) 89%, rgba(232,144,94,1) 94%, rgba(234,146,96,1) 96%, rgba(244,161,111,1) 100%); /* FF3.6+ */
 			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(249,159,107,1)), color-stop(57%,rgba(238,148,96,1)), color-stop(89%,rgba(236,146,94,1)), color-stop(94%,rgba(232,144,94,1)), color-stop(96%,rgba(234,146,96,1)), color-stop(100%,rgba(244,161,111,1))); /* Chrome,Safari4+ */
 			background: -webkit-linear-gradient(top,  rgba(249,159,107,1) 0%,rgba(238,148,96,1) 57%,rgba(236,146,94,1) 89%,rgba(232,144,94,1) 94%,rgba(234,146,96,1) 96%,rgba(244,161,111,1) 100%); /* Chrome10+,Safari5.1+ */
 			background: -o-linear-gradient(top,  rgba(249,159,107,1) 0%,rgba(238,148,96,1) 57%,rgba(236,146,94,1) 89%,rgba(232,144,94,1) 94%,rgba(234,146,96,1) 96%,rgba(244,161,111,1) 100%); /* Opera 11.10+ */
 			background: -ms-linear-gradient(top,  rgba(249,159,107,1) 0%,rgba(238,148,96,1) 57%,rgba(236,146,94,1) 89%,rgba(232,144,94,1) 94%,rgba(234,146,96,1) 96%,rgba(244,161,111,1) 100%); /* IE10+ */
-			background: linear-gradient(to bottom,  rgba(249,159,107,1) 0%,rgba(238,148,96,1) 57%,rgba(236,146,94,1) 89%,rgba(232,144,94,1) 94%,rgba(234,146,96,1) 96%,rgba(244,161,111,1) 100%); /* W3C */
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f99f6b', endColorstr='#f4a16f',GradientType=0 ); /* IE6-9 */
+
 			font-size      : 17px;
 		}
 
 		.btn:hover {
 			cursor : pointer;
-			background: rgb(244,161,111); /* Old browsers */
 			background: -moz-linear-gradient(top,  rgba(244,161,111,1) 0%, rgba(234,146,96,1) 4%, rgba(232,144,94,1) 6%, rgba(236,146,94,1) 12%, rgba(238,148,96,1) 43%, rgba(249,159,107,1) 100%); /* FF3.6+ */
 			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(244,161,111,1)), color-stop(4%,rgba(234,146,96,1)), color-stop(6%,rgba(232,144,94,1)), color-stop(12%,rgba(236,146,94,1)), color-stop(43%,rgba(238,148,96,1)), color-stop(100%,rgba(249,159,107,1))); /* Chrome,Safari4+ */
 			background: -webkit-linear-gradient(top,  rgba(244,161,111,1) 0%,rgba(234,146,96,1) 4%,rgba(232,144,94,1) 6%,rgba(236,146,94,1) 12%,rgba(238,148,96,1) 43%,rgba(249,159,107,1) 100%); /* Chrome10+,Safari5.1+ */
 			background: -o-linear-gradient(top,  rgba(244,161,111,1) 0%,rgba(234,146,96,1) 4%,rgba(232,144,94,1) 6%,rgba(236,146,94,1) 12%,rgba(238,148,96,1) 43%,rgba(249,159,107,1) 100%); /* Opera 11.10+ */
 			background: -ms-linear-gradient(top,  rgba(244,161,111,1) 0%,rgba(234,146,96,1) 4%,rgba(232,144,94,1) 6%,rgba(236,146,94,1) 12%,rgba(238,148,96,1) 43%,rgba(249,159,107,1) 100%); /* IE10+ */
-			background: linear-gradient(to bottom,  rgba(244,161,111,1) 0%,rgba(234,146,96,1) 4%,rgba(232,144,94,1) 6%,rgba(236,146,94,1) 12%,rgba(238,148,96,1) 43%,rgba(249,159,107,1) 100%); /* W3C */
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4a16f', endColorstr='#f99f6b',GradientType=0 ); /* IE6-9 */
+		}
 
+		.user:focus , .pass:focus {
+			box-shadow    : inset 0 0 1px 1px #ffcb9c;
+			border        : 1px solid #b6733c;
+			-webkit-transition    : all .2s ease-in;
+			-moz-transition       : all .2s ease-in;
 		}
 
 		hr {
@@ -123,7 +122,7 @@
 		:-moz-placeholder {  
 		   color          : #929292;
 		   font-size      : 17px;
-		   text-transform : uppercase;  
+		   text-transform : uppercase;
 		}
 
 		.setting {
@@ -133,20 +132,57 @@
 			background: -webkit-linear-gradient(top,  rgba(238,134,135,1) 0%,rgba(235,129,131,1) 2%,rgba(223,107,107,1) 7%,rgba(223,101,98,1) 11%,rgba(225,100,96,1) 13%,rgba(229,102,96,1) 14%,rgba(227,105,100,1) 27%,rgba(225,102,97,1) 29%,rgba(225,102,97,1) 41%,rgba(223,100,95,1) 43%,rgba(225,102,97,1) 48%,rgba(223,100,95,1) 55%,rgba(225,102,97,1) 57%,rgba(225,102,97,1) 70%,rgba(223,100,95,1) 71%,rgba(225,102,97,1) 98%,rgba(223,100,95,1) 100%); /* Chrome10+,Safari5.1+ */
 			background: -o-linear-gradient(top,  rgba(238,134,135,1) 0%,rgba(235,129,131,1) 2%,rgba(223,107,107,1) 7%,rgba(223,101,98,1) 11%,rgba(225,100,96,1) 13%,rgba(229,102,96,1) 14%,rgba(227,105,100,1) 27%,rgba(225,102,97,1) 29%,rgba(225,102,97,1) 41%,rgba(223,100,95,1) 43%,rgba(225,102,97,1) 48%,rgba(223,100,95,1) 55%,rgba(225,102,97,1) 57%,rgba(225,102,97,1) 70%,rgba(223,100,95,1) 71%,rgba(225,102,97,1) 98%,rgba(223,100,95,1) 100%); /* Opera 11.10+ */
 			background: -ms-linear-gradient(top,  rgba(238,134,135,1) 0%,rgba(235,129,131,1) 2%,rgba(223,107,107,1) 7%,rgba(223,101,98,1) 11%,rgba(225,100,96,1) 13%,rgba(229,102,96,1) 14%,rgba(227,105,100,1) 27%,rgba(225,102,97,1) 29%,rgba(225,102,97,1) 41%,rgba(223,100,95,1) 43%,rgba(225,102,97,1) 48%,rgba(223,100,95,1) 55%,rgba(225,102,97,1) 57%,rgba(225,102,97,1) 70%,rgba(223,100,95,1) 71%,rgba(225,102,97,1) 98%,rgba(223,100,95,1) 100%); /* IE10+ */
-			background: linear-gradient(to bottom,  rgba(238,134,135,1) 0%,rgba(235,129,131,1) 2%,rgba(223,107,107,1) 7%,rgba(223,101,98,1) 11%,rgba(225,100,96,1) 13%,rgba(229,102,96,1) 14%,rgba(227,105,100,1) 27%,rgba(225,102,97,1) 29%,rgba(225,102,97,1) 41%,rgba(223,100,95,1) 43%,rgba(225,102,97,1) 48%,rgba(223,100,95,1) 55%,rgba(225,102,97,1) 57%,rgba(225,102,97,1) 70%,rgba(223,100,95,1) 71%,rgba(225,102,97,1) 98%,rgba(223,100,95,1) 100%); /* W3C */
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee8687', endColorstr='#df645f',GradientType=0 ); /* IE6-9 */
 
 			background : #e06560;
 
 			position : absolute;
-			top      : -1px;
+			top      : -14px;
 			left     : 10px;
 			width    : 60px;
-			height   : 80px;
+			height   : 14px;
+			border-top   : 1px solid #9d5958;
+			-webkit-transition : height .7s;
+			-moz-transition    : height .7s;
+		}
+
+		form:hover .setting  {
+			height : 80px;
+			-webkit-transition : height .7s;
+			-moz-transition    : height .7s;
+		}
+
+		form:hover h6.set {
+			font-size : 0.67em;
+			-webkit-transition : font .7s;
+			-moz-transition    : font .7s;
+		}
+
+		form:hover .icon-cog {
+			-webkit-transition : font .7s;
+			-moz-transition    : font .7s;
+			font-size : 42px;
+		}
+
+		.setting > div {
+			position : absolute;
 		}
 
 		.setting .top {
+			top      : -1px;
+			border-style : solid;
+			z-index      : -1;
+		}
 
+		.top.left {
+			border-width : 0 0 10px 5px;
+			border-color : transparent transparent  #9d5958 transparent;
+			right        : 100%;
+		}
+
+		.top.right {
+			border-width : 0 5px 10px 0;
+			border-color : transparent transparent  #9d5958 transparent;
+			left         : 100%;
 		}
 
 		.setting .middle {
@@ -154,37 +190,40 @@
 			border-width : 12px 6px 0 6px;
 			border-color : transparent;
 			border-top-color   : #e06560;
-
-			position : absolute;
 			top      : 100%;
 		}
 
 		.setting .side {
 			border-style : solid;
-			position : absolute;
 			top      : 100%;
 		}
 		
-		.setting > h4 {
+		.icon-cog {
 			position   : relative;
-			font-size  : 42px;
+			display    : block;
+			font-size  : 0;
 			margin     : 4px 0;
 			color      : #bb4140;
+			-webkit-transition : font .7s;
+			-moz-transition    : font .7s;
 		}
 
-		.setting > h6 {
+		h6.set {
 			position   : relative;
 			color      : #bb4140;
 			text-transform : uppercase;
+			font-size  : 0;
+			-webkit-transition : font .7s;
+			-moz-transition    : font .7s;
 		}
 
-		.left {
+		.side.left {
 			border-width : 12px 6px 0 0;
 			border-color : #e06560 transparent transparent transparent;
 			left         : 0;
 		}
 
-		.right {
+		.side.right {
 			border-width : 12px 0 0 6px;
 			border-color : #e06560 transparent transparent transparent;
 			right        : 0;
@@ -194,18 +233,23 @@
 </head>
 <body>
 	<form action="">
+
 		<h1>Flock</h1>
+
 		<input class="user" type="text"     name="name"     placeholder="username" />
 		<input class="pass" type="password" name="password" placeholder="password" />
 		<input class="btn"  type="submit"   name="submit"   value="SIGN IN" />
+
 		<hr style="background-color : #bebebe;"/>
 		<hr style="background-color : #FFF; "/>
+
 		<h5>Forgot your password? <a href="">click here</a></h5>
+
 		<div class="setting">
-			<h4 class="icon-cog"></h4>
-			<h6>settings</h6>
-			<div class="top"></div>
-			<div class="top"></div>
+			<a class="icon-cog" href="#"></a>
+			<h6  class="set">settings</h6>
+			<div class="top left"></div>
+			<div class="top right"></div>
 			<div class="middle" style="left : 6px;"></div>
 			<div class="middle" style="left : 18px;"></div>
 			<div class="middle" style="left : 30px;"></div>
@@ -213,6 +257,7 @@
 			<div class="side left"></div>
 			<div class="side right"></div>
 		</div>
+		
 	</form>
 </body>
 </html>
