@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" /> 
+	<title>quick menu</title>	
+	<style type="text/css">
+		@import url("http://netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css");
+
+		* {
+			padding : 0;
+			margin  : 0;
+			border  : 0;
+		}
+
+		body {
+			padding-top : 80px;
+			background-image: url('bg.png');
+		}
+
+		nav {
+			width  		  : 78px;
+			margin        : auto;
+			box-shadow    : 0 -2px 0 3px rgba(200,200,200,.6);
+		}
+
+		menu {
+			list-style-type : none;
+			background    : #514954;
+		}
+
+		nav,nav > menu , nav > menu > li{
+			border-radius : 5px 5px 0 0;
+		}
+
+		li {
+			text-align : center;
+		}
+
+		a {
+			display         : block;
+			color           : #FFF;
+			padding         : 10px 12px;
+			text-decoration : none;
+			font-size       : 30px;
+		}
+
+		li menu {
+			position : absolute;
+			top      : 100%;
+			left     : 0;
+			padding  : 8px;
+			border-radius : 0 0 5px 5px;
+			box-shadow    : 0 2px 0 3px rgba(200,200,200,.4);
+			-webkit-transform-origin : 100% top;
+  			-webkit-transform        : rotateX(-84deg); 
+			-webkit-transition       : all .3s cubic-bezier(0.915, 1.390, 0.135, -0.270);
+			-moz-transform-origin    : 100% top;
+  			-moz-transform           : rotateX(-84deg); 
+			-moz-transition          : all .3s cubic-bezier(0.915, 1.390, 0.135, -0.270);			
+		}
+
+		nav > menu > li {
+			position   : relative;
+			-webkit-perspective :250;
+			-moz-perspective    :250;
+		}
+
+		li:hover menu {
+  			-webkit-transition : all .3s cubic-bezier(0.915, 1.390, 0.135, -0.270);
+  			-moz-transition    : all .3s cubic-bezier(0.915, 1.390, 0.135, -0.270);
+  			-webkit-transform  : rotateX(0);
+  			-moz-transform     : rotateX(0);
+		}
+
+		li:hover > a {
+			color : #FF0;
+			text-shadow : 1px 1px 0 #aaa , 2px 2px 0 #000;
+		}
+
+		li menu li:first-child {
+		    background: -webkit-linear-gradient(rgba(92,84,95,1) 0%, rgba(99,91,102,1) 2%, rgba(100,92,103,1) 5%, rgba(98,90,101,1) 7%, rgba(100,92,103,1) 10%, rgba(97,89,100,1) 15%, rgba(98,92,104,1) 59%, rgba(97,91,101,1) 100%);
+		    background: -o-linear-gradient(rgba(92,84,95,1) 0%, rgba(99,91,102,1) 2%, rgba(100,92,103,1) 5%, rgba(98,90,101,1) 7%, rgba(100,92,103,1) 10%, rgba(97,89,100,1) 15%, rgba(98,92,104,1) 59%, rgba(97,91,101,1) 100%);
+		    background: -moz-linear-gradient(rgba(92,84,95,1) 0%, rgba(99,91,102,1) 2%, rgba(100,92,103,1) 5%, rgba(98,90,101,1) 7%, rgba(100,92,103,1) 10%, rgba(97,89,100,1) 15%, rgba(98,92,104,1) 59%, rgba(97,91,101,1) 100%);
+		}
+
+		menu li:nth-child(2) {
+			background: -moz-linear-gradient(top,  rgba(99,91,102,1) 0%, rgba(115,107,118,1) 5%, rgba(116,108,119,1) 7%, rgba(114,106,117,1) 9%, rgba(114,106,117,1) 100%);
+			background: -webkit-linear-gradient(top,  rgba(99,91,102,1) 0%,rgba(115,107,118,1) 5%,rgba(116,108,119,1) 7%,rgba(114,106,117,1) 9%,rgba(114,106,117,1) 100%);
+			background: -o-linear-gradient(top,  rgba(99,91,102,1) 0%,rgba(115,107,118,1) 5%,rgba(116,108,119,1) 7%,rgba(114,106,117,1) 9%,rgba(114,106,117,1) 100%);
+		}	
+
+		li menu li:last-child {
+			background: -moz-linear-gradient(top,  rgba(123,117,127,1) 0%, rgba(133,127,137,1) 2%, rgba(135,129,139,1) 5%, rgba(130,124,134,1) 7%, rgba(133,127,137,1) 12%, rgba(132,126,136,1) 100%);
+			background: -webkit-linear-gradient(top,  rgba(123,117,127,1) 0%,rgba(133,127,137,1) 2%,rgba(135,129,139,1) 5%,rgba(130,124,134,1) 7%,rgba(133,127,137,1) 12%,rgba(132,126,136,1) 100%);
+			background: -o-linear-gradient(top,  rgba(123,117,127,1) 0%,rgba(133,127,137,1) 2%,rgba(135,129,139,1) 5%,rgba(130,124,134,1) 7%,rgba(133,127,137,1) 12%,rgba(132,126,136,1) 100%);
+		}
+
+	</style>
+</head>
+<body>
+	<nav>
+		<menu>
+			<li>
+				<a href="#" class="icon-reorder"></a>
+				<menu>
+					<li><a href="#" class="icon-cog"></a></li>
+					<li><a href="#" class="icon-phone"></a></li>
+					<li><a href="#" class="icon-bolt"></a></li>
+				</menu>
+			</li>
+		</menu>
+	</nav>
+</body>
+</html>
