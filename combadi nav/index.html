@@ -1,0 +1,209 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		* {
+			padding : 0;
+			margin  : 0;
+			border  : 0;
+			text-align : center;
+			font-family: "Georgia";
+		}
+
+		body {
+			padding-top     : 100px;
+			background-image: url('bg.jpg');
+		}
+
+		section {
+			width : 960px;
+			margin: auto;
+		}
+
+		.item , figure {
+			-webkit-transition : all 225ms ease-out;
+		}
+
+		.item {
+			float  : left;
+			width  : 320px;
+			margin-top : 354px;
+			height     : 130px;
+			position : relative;
+		}
+
+		figure {
+			border-bottom   : 4px solid skyblue;
+		}
+
+		div.handle {
+			width  : 64px;
+			height : 40px;
+			background-color : skyblue;
+			margin   : auto;
+			position : relative;
+			top      : -20px;
+			font-weight : bold;
+			font-size  : 30px;
+			color      : #333;
+		}
+
+		div.handle:after {
+			display  : block;
+			content  : " ";
+			position : absolute;
+			bottom   : 100%;
+			left     : 0;
+
+			border-style : solid;
+			border-color : transparent;
+			border-bottom-color : skyblue;
+			border-width : 0 32px 15px 32px;
+		}
+
+		div.handle:before {
+			display  : block;
+			content  : " ";
+			position : absolute;
+			top      : 100%;
+			left     : 0;
+			
+			border-style : solid;
+			border-color : transparent;
+			border-top-color : skyblue;
+			border-width : 15px 32px 0 32px;
+		}
+
+		ul {
+			list-style-type : none;
+		}
+
+		ul li {
+			opacity    : 0;
+			font-size  : 17px;
+			margin-top : 10px;
+		}
+
+		.item a {
+			margin : auto;
+			opacity: 0;
+			color  : #fff;
+			padding  : 10px;
+			width    : 200px;
+			display         : block;
+			background-color: #e9544e;
+			text-decoration : none;
+			font-size       : 15px;
+			font-weight     : bold;
+		}
+
+		.item h2 {
+			height   : 70px;
+			position : absolute;
+			bottom   : 0;
+			left     : 0;
+			width    : 100%;
+			color    : #4e4e4d;
+		}
+
+		h2 > span {
+			display : block;
+			color   : #787876;
+			font-size   : 13px;
+			font-style  : italic;
+			font-weight : normal;
+		}
+
+		.item:hover {
+			cursor     : pointer;
+			margin-top : 0;
+			height     : 484px;
+			-webkit-transition : all 225ms;
+			box-shadow : 0 0 5px 1px #aaa;
+			background : #fff;
+		}
+
+		.item:hover ul {
+			height : 100px;
+		}
+
+		.item:hover ul li:first-child {
+			-webkit-transition : all 225ms .222s;
+			opacity : 1;
+		}
+
+		.item:hover ul li:nth-child(2) {
+			-webkit-transition : all 225ms .299s;
+			opacity : 1;
+		}
+
+		.item:hover ul li:last-child {
+			-webkit-transition : all 225ms .333s;
+			opacity : 1;
+		}
+
+		.item:hover a {
+			-webkit-transition : all 225ms .8s;
+			opacity  : 1;
+		}		
+
+		.item:hover figure {
+			margin-top : 0;
+			height     : 184px;
+			-webkit-transition : height 225ms;
+		}
+
+		.item:hover .handle {
+			-webkit-transition : height 225ms;
+		}
+
+		.item:hover h2 {
+			color : #e8554e;
+			text-shadow : 0 1px 1px skyblue;
+			-webkit-transition : all 225ms .8s;
+		}
+
+		.cover:after , .cover:before {display: table ; content: " ";}
+
+	</style>
+</head>
+<body>
+	<section class="cover">
+		<div class="item">
+			<figure style="background-image: url('1.jpg');"></figure>
+			<div class="handle">I</div>
+			<ul>
+				<li>In three words I can sum up everything</li>
+				<li>I've learned about life</li>
+				<li>.. it goes on ..</li>
+			</ul>
+			<a href="#">my name is link</a>
+			<h2><span>description</span>Title</h2>
+		</div>
+		<div class="item">
+			<figure style="background-image: url('2.jpg');"></figure>
+			<div class="handle">II</div>
+			<ul>
+				<li>In three words I can sum up everything</li>
+				<li>I've learned about life</li>
+				<li>.. it goes on ..</li>
+			</ul>
+			<a href="#">my name is link</a>
+			<h2><span>description</span>Title</h2>
+		</div>
+		<div class="item">
+			<figure style="background-image: url('3.jpg');"></figure>
+			<div class="handle">III</div>
+			<ul>
+				<li>In three words I can sum up everything</li>
+				<li>I've learned about life</li>
+				<li>.. it goes on ..</li>
+			</ul>
+			<a href="#">my name is link</a>
+			<h2><span>description</span>Title</h2>
+		</div>
+	</section>
+</body>
+</html>
