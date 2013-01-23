@@ -1,0 +1,196 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+	<title>profile</title>
+	<style type="text/css">
+		
+		* {
+			padding : 0;
+			margin  : 0;
+			border  : 0;
+		}
+
+		@font-face {
+  			font-family :icon;
+    		src: url('http://bennettfeely.com/fonts/icons.woff'); 
+    	}
+
+		body {
+			padding-top : 50px;
+			background-color : #555;
+		}
+
+		div.pf {
+			position         : relative;
+			border-radius    : 12px 12px 0 0;
+			background-image: url('1.jpg');
+			width            : 329px;
+			padding-top      : 10px;
+			height           : 306px;
+			margin           : auto;
+		}
+
+		menu {
+			list-style-type : none;
+			display         : table;
+			content         : "";
+			clear           : both;
+			margin          : auto;
+		}
+
+		menu.social li {
+			float       : left;
+			margin-left : 90px;
+		}
+
+		.social li:first-child {
+			margin-left : 0px;
+		}
+
+		menu a {
+			display         : block;
+			text-decoration : none;
+			color           : #CCC;
+			font-size       : 30px;
+			font-weight     : bold;
+		}
+
+		menu.social a {
+			font-family : icon;
+		}
+
+		.social a:hover {
+			color : #999;
+		}
+
+		figure {
+			width  : 110px;
+			height : 110px;
+			cursor : pointer;
+			border-radius : 50%;
+			border : 3px solid #fff;
+			margin : 10px auto;
+			box-shadow : 0 3px 3px 0 #999;
+			background-size : 100% 100%;
+			background-image: url('me.jpg');
+		}
+
+		.name {
+			text-align : center;
+			color      : #666;
+			cursor     : pointer;
+			font-family    : "Bodoni MT";
+			letter-spacing : 2px;
+			margin         : 20px 0 5px 0;
+			text-shadow    : 0 1px 1px #fff , 0 2px 1px #999;
+		}
+
+		.skill {
+			text-align     : center;
+			color          : #999;
+			font-weight    : normal;
+			letter-spacing : 5px;
+			font-family    : "Trebuchet MS";
+		}
+
+		.btn {
+			display          : block;
+			margin           : auto;
+			margin-top       : 20px;
+			padding          : 3px 30px;
+			border-radius    : 5px;
+			font-family      : "Georgia";
+			font-size        : 20px;
+			color            : #eee;
+			box-shadow       : 0px 0px 2px 0px #fff;
+            background       : -moz-linear-gradient(top,  rgba(125,126,125,1) 0%, rgba(14,14,14,1) 100%);
+            background       : -webkit-linear-gradient(top,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%);
+		}
+
+		.btn:hover {
+			color : #fff;
+		}
+
+		.btn:active {
+            background: -moz-linear-gradient(top,  rgba(14,14,14,1) 0%, rgba(125,126,125,1) 100%);
+            background: -webkit-linear-gradient(top,  rgba(14,14,14,1) 0%,rgba(125,126,125,1) 100%);
+		}
+
+		.co {
+			position : absolute;
+			top      : 100%;
+			left     : 0px;
+			width    : 100%;
+			border-top    : 1px solid #777;
+			border-radius : 0 0 12px 12px;
+		}
+
+		.co li {
+			background-color   : #fcfcfc;
+			text-align         : center;
+			height             : 0;
+			opacity            : 0;
+			-webkit-transition : all 100ms linear; 
+			-moz-transition    : all 100ms linear; 
+		}
+
+		.co li:last-child {
+			border-radius    : 0 0 12px 12px;
+			background-image : url('1.jpg');
+			height           : 39px;
+			opacity          : 1;
+		}
+
+		.co a {
+			font-size      : 15px;
+			padding        : 10px 0;
+			font-weight    : normal;
+			color          : #999;
+			letter-spacing : 3px;
+			font-family    : "Georgia";
+		}
+
+		.co a:hover {
+			color : #555;
+		}
+
+		.pf:hover .co li {
+			height             : 39px;
+			opacity            : 1;
+			border-bottom      : 1px solid #aaa;
+			-webkit-transition : all 300ms linear; 
+			-moz-transition    : all 300ms linear; 
+		}
+
+		.pf:hover .co li:last-child a {
+			-webkit-transform  : rotate(180deg);
+			-moz-transform     : rotate(180deg);
+			color              : #555;
+			-webkit-transition : all 0 .2s;
+			-moz-transition    : all 0 .2s;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="pf">
+		<menu class="social">
+			<li><a href="#">g</a></li>
+			<li><a href="#">t</a></li>
+			<li><a href="#">d</a></li>
+		</menu>
+		
+		<figure ></figure>
+		<h2 class="name">NICK NAME</h2>
+		<h5 class="skill">EXPERTISE</h5>
+		<input type="button" value="Follow" class="btn"/>
+		<menu class="co">
+			<li><a href="#">www.seyedi.pro</a></li>
+			<li><a href="#">iran, mashad</a></li>
+			<li><a href="#">+0123456789</a></li>
+			<li><a href="#">▼</a></li>
+		</menu>
+	</div>
+</body>
+</html>
