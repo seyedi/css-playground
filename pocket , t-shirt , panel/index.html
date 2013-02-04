@@ -1,0 +1,358 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+	<title>1391.11.14</title>
+	<style type="text/css">
+		
+		* {
+			padding : 0;
+			margin  : 0;
+			border  : 0;
+			outline : 0;
+		}
+
+		body {
+			background-color: #b2d0f1;
+			padding-top     : 80px;
+		}
+
+		.container {
+			width  : 400px;
+			height : 300px;
+			margin : auto;
+			box-shadow : 3px 3px 0 0 #7f8e9e , 6px 6px 0 0 #b2d0f1 , 9px 9px 0 0 #fff , 12px 12px 0 0 #b2d0f1 ,15px 15px 0 0 #7f8e9e ;
+		}
+
+		.container > div {
+			float : left;
+		}
+
+		div:after , div:before {
+			display  : block;
+			content  : " ";
+			position : absolute;
+		}
+
+		.pocket {
+			position   : relative;
+			width      : 72px;
+			height     : 73px;
+			margin     : 132px 0 0 46px;
+			background : #7f8e9e;
+			box-shadow : -7px 0 0 0 #FFF , -9px 0 0 0 #b2d0f1 , -16px 0 0 0 #FFF;
+		}
+
+		.pocket:after , .pocket:before {
+			width  : 48px;
+			height : 60px;
+			border-radius : 50px;
+			border : 3px solid #7f8e9e;
+			top    : -33px;
+			left   : 9px;
+			z-index: -1;
+		}
+
+		.pocket:after {
+			left   : -9px;
+		}
+
+		.rocket {
+			margin : 27px auto;
+			width  : 14px;
+			height : 29px;
+			background    : #fff;
+			position : relative;
+		}
+
+		.rocket:after , .rocket:before {
+			border-style : solid;			
+			bottom       : -4px;
+			border-color : transparent;
+			border-top-color : #fff;
+		}
+
+		.rocket:before {
+			border-width     : 14px 14px 0 4px;
+			left             : -7px;
+		}
+
+		.rocket:after {
+			border-width : 14px 4px 0 14px;
+			right        : -7px;
+		}
+
+		.rocket > div {
+			position : absolute;
+			top      : -10px;
+			left     : 0;
+			border-style : solid;
+			border-color : transparent transparent #b2d0f1 transparent;
+			border-width : 0 7px 10px 7px;
+		}
+
+		.rocket > div:after {
+			width : 4px;
+			height: 4px;
+			background : #7f8e9e;
+			top        : 16px;
+			left       : -2px;
+			border-radius : 50%;
+			box-shadow : 0 -24px 0 0 #fff;
+		}
+
+		.rocket > div:before {
+			width : 2px;
+			height: 10px;
+			background : #b2d0f1;
+			top        : -4px;
+			left       : -1px;
+		}
+
+		.triangle {
+			position : absolute;
+			top      : 60px;
+			left     :-15px;
+			border-style : solid;
+			border-width : 0 7px 13px 7px;
+			border-color : transparent transparent #b2d0f1 transparent;
+		}
+
+		.triangle:before {
+			border       : inherit;
+			border-width : 0 5px 9px 5px;
+			border-bottom-color :#fff;
+			top          : 4px;
+			left         :-5px;
+		}
+
+		.shirt {
+			position   : relative;
+			width      : 61px;
+			height     : 85px;
+			margin     : 120px 0 0 53px;
+			background : #7f8e9e;
+		}
+
+		.shirt:before , .shirt:after {
+			width : 26px;
+			height: 60px;
+			top   : -17px;
+			background : #7f8e9e;
+		}
+
+		.shirt:before {
+			-webkit-transform : rotate(45deg);
+			-moz-transform    : rotate(45deg);
+			-o-transform      : rotate(45deg);
+			-ms-transform     : rotate(45deg);
+			transform         : rotate(45deg);
+			left  : -13px;
+			border-radius : 50% 0px 0px 0px;
+		}
+
+		.shirt:after {
+			-webkit-transform : rotate(-45deg);
+			-moz-transform    : rotate(-45deg);
+			-o-transform      : rotate(-45deg);
+			-ms-transform     : rotate(-45deg);
+			transform         : rotate(-45deg);
+			right  : -13px;
+			border-radius : 0 50% 0px 0px;
+		}
+
+		.bird {
+			position : relative;
+			margin   : 30px 0 3px 27px;
+			width    : 20px;
+			height   : 20px;
+			border-radius : 50%;
+			background-color: #fff;
+		}
+
+		.bird:before {
+			width  : 19px;
+			height : 19px;
+			border-radius : 0 50% 50% 50%;
+			background-color: #fff;
+			top   : -6px;
+			left  : -11px;
+		}
+
+		.bird:after {
+			width  : 22px;
+			height : 10px;
+			border-radius : 10px 10px 0 0;
+			background-color : #fff;
+			top     : 10px;
+			left    : -12px;	
+		}
+
+		.bird .head {
+			position : absolute;
+			top      : -2px;
+			right    : 5px;
+			width    : 3px;
+			height   : 3px;
+			border-radius : 50%;
+			background    : #7f8e9e;
+			box-shadow    : 0 0 0 4px #fff;
+		}
+
+		.head:after , .head:before {
+			width  : 2px;
+			height : 6px;
+			-webkit-transform : rotate(-45deg);
+			-moz-transform    : rotate(-45deg);
+			-o-transform      : rotate(-45deg);
+			-ms-transform     : rotate(-45deg);
+			transform         : rotate(-45deg);
+			top   : 0;
+			right : -5px;
+			border-radius : 2px; 
+			background : #fff;			
+		}
+
+		.head:before {
+			-webkit-transform : rotate(45deg);
+			-moz-transform    : rotate(45deg);
+			-o-transform      : rotate(45deg);
+			-ms-transform     : rotate(45deg);
+			top   : -2px;
+		}
+
+		.limb {
+			position : relative;
+			width  : 32px;
+			height : 4px;
+			margin : auto;
+			background : #b2d0f1;
+		}
+
+		.limb:after {
+			width  : 3px;
+			height : 10px;
+			right  : 10px;
+			background        : #b2d0f1;
+			-webkit-transform : rotate(-45deg);
+			-moz-transform    : rotate(-45deg);
+			-o-transform      : rotate(-45deg);
+			-ms-transform     : rotate(-45deg);
+			transform         : rotate(-45deg);
+		}
+
+		.limb:before { /* bad idea ;) */
+			width : 5px;
+			height: 5px;
+			border-radius : 50%;
+			background : #FFF;
+			top : -69px;
+			left: 143px;
+			z-index : 1;
+		}
+
+
+
+		.panel {
+			position    : relative;
+			width       : 59px;
+			height      : 66px;
+			margin      : 125px 0 0 67px;
+			border      : 3px solid #b2d0f1;
+			box-shadow  : 0 0 0 8px #7f8e9e;
+			background  : #7f8e9e;
+		}
+
+		.panel:before {
+			border-width : 0 20px 20px 20px;
+			border-style : solid ;
+			border-color : transparent transparent #7f8e9e transparent;
+			top : -31px;
+			left : 9px;
+		}
+
+		.panel:after {
+			border-width : 0 16px 16px 16px;
+			border-style : solid ;
+			border-color : transparent transparent #b2d0f1 transparent;
+			top  : -27px;
+			left : 13px;
+		}
+
+		.panel .leaf {
+			position      : relative;
+			width         : 30px;
+			height        : 30px;
+			border-radius : 50%;
+			background    : #fff;
+			margin        : 9px auto 0;
+		}
+
+		.leaf:before , .leaf:after {
+			border-width : 8px 8px 0 8px;
+			border-style : solid ;
+			border-color : #7f8e9e transparent transparent transparent;
+			top          : 0;
+		}
+
+
+
+		.leaf:after {
+			right : 0;
+		}
+
+		.leg {
+			position   : relative;
+			width      : 4px;
+			height     : 15px;
+			background : #fff;
+			margin     : auto;
+		}
+
+		.leg:before , .leg:after {
+			width      : 22px;
+			height     : 8px;
+			background : #FFF;
+			bottom     : 0;
+			border-radius : 50%;
+		}
+
+		.leg:before {
+			right  : -2px;
+			-webkit-transform : rotate(45deg);
+			-moz-transform    : rotate(45deg);
+			-o-transform      : rotate(45deg);
+			-ms-transform     : rotate(45deg);
+		}
+
+		.leg:after {
+			left   : -2px;
+			-webkit-transform : rotate(135deg);
+			-moz-transform    : rotate(135deg);
+			-o-transform      : rotate(135deg);
+			-ms-transform     : rotate(135deg);
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="pocket">
+			<div class="rocket">
+				<div></div>
+			</div>
+			<div class="triangle"></div>
+		</div>
+		<div class="shirt">
+			<div class="bird">
+				<div class="head"></div>
+			</div>
+			<div class="limb"></div>
+		</div>
+		<div class="panel">
+			<div class="leaf"></div>
+			<div class="leg"></div>
+		</div>
+	</div>
+</body>
+</html>
