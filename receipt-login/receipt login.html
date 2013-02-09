@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+	<title>Receipt Login</title>
+	<style type="text/css">
+		* {
+			padding : 0;
+			margin  : 0;
+			border  : 0;
+			outline : 0;
+		}
+
+		body {
+			background: rgb(250,243,237);
+            background: -webkit-linear-gradient(top,  rgba(250,243,237,1) 0%,rgba(240,233,228,1) 100%);
+            background: -moz-linear-gradient(top,  rgba(250,243,237,1) 0%, rgba(240,233,228,1) 100%);
+            background: -o-linear-gradient(top,  rgba(250,243,237,1) 0%,rgba(240,233,228,1) 100%);
+		}
+
+		form {
+			position     : relative;
+			width        : 350px;
+			height       : 335px;
+			padding-top  : 40px;
+			margin       : 50px auto;
+			border-radius: 20px 20px 0 0;
+			text-align   : center;
+			background : rgb(41,40,38);
+            background : -webkit-linear-gradient(top,  rgba(41,40,38,1) 0%,rgba(207,207,207,1) 0%,rgba(218,218,218,1) 1%,rgba(240,240,240,1) 2%,rgba(245,245,245,1) 2%,rgba(246,246,246,1) 2%,rgba(243,243,243,1) 3%,rgba(227,227,227,1) 5%,rgba(222,222,222,1) 5%,rgba(225,225,225,1) 8%,rgba(238,238,238,1) 12%,rgba(253,253,253,1) 23%,rgba(253,253,253,1) 27%,rgba(249,249,249,1) 31%,rgba(227,227,227,1) 43%,rgba(226,226,226,1) 49%,rgba(231,231,231,1) 56%,rgba(253,253,253,1) 74%,rgba(255,255,255,1) 82%,rgba(249,249,249,1) 87%,rgba(230,230,230,1) 97%,rgba(227,227,227,1) 100%);
+            background : -moz-linear-gradient(top,  rgba(41,40,38,1) 0%, rgba(207,207,207,1) 0%, rgba(218,218,218,1) 1%, rgba(240,240,240,1) 2%, rgba(245,245,245,1) 2%, rgba(246,246,246,1) 2%, rgba(243,243,243,1) 3%, rgba(227,227,227,1) 5%, rgba(222,222,222,1) 5%, rgba(225,225,225,1) 8%, rgba(238,238,238,1) 12%, rgba(253,253,253,1) 23%, rgba(253,253,253,1) 27%, rgba(249,249,249,1) 31%, rgba(227,227,227,1) 43%, rgba(226,226,226,1) 49%, rgba(231,231,231,1) 56%, rgba(253,253,253,1) 74%, rgba(255,255,255,1) 82%, rgba(249,249,249,1) 87%, rgba(230,230,230,1) 97%, rgba(227,227,227,1) 100%);
+            background : -o-linear-gradient(top,  rgba(41,40,38,1) 0%,rgba(207,207,207,1) 0%,rgba(218,218,218,1) 1%,rgba(240,240,240,1) 2%,rgba(245,245,245,1) 2%,rgba(246,246,246,1) 2%,rgba(243,243,243,1) 3%,rgba(227,227,227,1) 5%,rgba(222,222,222,1) 5%,rgba(225,225,225,1) 8%,rgba(238,238,238,1) 12%,rgba(253,253,253,1) 23%,rgba(253,253,253,1) 27%,rgba(249,249,249,1) 31%,rgba(227,227,227,1) 43%,rgba(226,226,226,1) 49%,rgba(231,231,231,1) 56%,rgba(253,253,253,1) 74%,rgba(255,255,255,1) 82%,rgba(249,249,249,1) 87%,rgba(230,230,230,1) 97%,rgba(227,227,227,1) 100%);
+            box-shadow : 0 5px 10px 0px #555;
+		}
+
+		form:after , form:before {
+			display : block;
+			content : "";
+			position: absolute;
+		}                 
+
+		form:after {
+			width : 100%;
+			height: 10px;
+			top   : 100%;
+			left  : 0;
+	        -webkit-filter : drop-shadow(0px 2px 2px rgba(0,0,0,0.4));
+			background: -webkit-radial-gradient(transparent 0,transparent 6px,#e1e1e0 4px,#e1e1e0);
+			background-size     : 20px 30px;
+			background-position : 5px 0;
+  			background-repeat   : repeat-x;
+		}
+
+		form:before {
+			width : 400px;
+			height: 10px;
+			top   : -5px;
+			left  : -25px;
+			z-index : -1;
+			border-radius : 10px;
+			background: #000;
+			background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(29,25,26,1) 11%,rgba(25,23,24,1) 22%,rgba(44,42,43,1) 33%,rgba(46,42,43,1) 47%,rgba(0,0,0,1) 48%,rgba(0,0,0,1) 53%,rgba(0,0,0,1) 58%,rgba(74,74,74,1) 58%,rgba(78,78,78,1) 78%,rgba(85,85,85,1) 89%,rgba(0,0,0,1) 100%);
+            background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(29,25,26,1) 11%, rgba(25,23,24,1) 22%, rgba(44,42,43,1) 33%, rgba(46,42,43,1) 47%, rgba(0,0,0,1) 48%, rgba(0,0,0,1) 53%, rgba(0,0,0,1) 58%, rgba(74,74,74,1) 58%, rgba(78,78,78,1) 78%, rgba(85,85,85,1) 89%, rgba(0,0,0,1) 100%);
+            background: -o-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(29,25,26,1) 11%,rgba(25,23,24,1) 22%,rgba(44,42,43,1) 33%,rgba(46,42,43,1) 47%,rgba(0,0,0,1) 48%,rgba(0,0,0,1) 53%,rgba(0,0,0,1) 58%,rgba(74,74,74,1) 58%,rgba(78,78,78,1) 78%,rgba(85,85,85,1) 89%,rgba(0,0,0,1) 100%);
+		}
+
+		hr {
+			border-top    : 1px dashed #b4b4b4;
+			border-bottom : 1px dashed #FFF;
+			margin        : 0 11px 30px;
+		}
+
+		h1 {
+			color         : #00773d;
+			font-family   : "Myriad Pro";
+			font-style    : italic;
+			margin-bottom : 30px;
+			text-transform: capitalize;
+		}
+
+		input {
+			display       : block;
+			width         : 250px;
+			height        : 40px;
+			margin        : 0 auto 10px;
+			text-align    : center;
+			border-radius : 5px;
+			font-size     : 20px;
+		}
+
+		.user , .pass {
+			box-shadow     : inset 0 0 3px 1px #ccc;
+			border-top     : 2px solid #aaa;
+			color          : #006e2e;
+			font-family    : "Myriad Pro";
+		}
+
+		.btn {
+			margin       : 40px auto 30px;
+			border       : 1px solid #000;
+			font-family  : "Myriad Pro";
+			font-weight  : bold;
+			cursor       : pointer;
+			font-size    : 17px;
+			color        : #fff;
+			text-shadow  : 0 1px 1px #000;
+            background   : -moz-linear-gradient(top, #00854a 0%, #006e2e 100%);
+            background   : -webkit-linear-gradient(top, #00854a 0%,#006e2e 100%);
+		}
+
+		.btn:hover {
+			background : #00854a;
+		}
+
+		a {
+			text-decoration : none;
+			font-family     : "Myriad Pro";
+			color           : #333;
+			font-weight     : bold;
+		}
+
+		::-webkit-input-placeholder {
+  			color       : #ccc;
+  			font-family : "Monotype Corsiva";
+  			font-size      : 20px;
+  			text-transform : capitalize;
+  			letter-spacing : 2px;
+  		}
+
+		:-moz-placeholder {  
+  			color       : #ccc;
+  			font-family : "Monotype Corsiva";
+  			font-size      : 20px;
+  			text-transform : capitalize;
+  			letter-spacing : 2px;
+  		}
+
+	</style>	
+</head>
+<body>
+	<form action="">
+		<hr />
+		<h1>receipt login</h1>
+		<input type="text"     class="user" placeholder="username"/>
+		<input type="password" class="pass" placeholder="password"/>
+		<input type="submit"   class="btn"  value="Sign in"/>
+		<a href="#">Can't access your account?</a>
+	</form>
+</body>
+</html>
