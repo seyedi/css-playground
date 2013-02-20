@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+	<title>loader-bottle</title>
+	<style type="text/css">
+		
+		* {
+			padding : 0;
+			margin  : 0;
+			border  : 0;
+		}
+
+		body {
+			background  : #0D784C;
+			padding-top : 100px;
+			text-align  : center;
+		}
+
+
+		.bottle {
+			display : inline-block;
+			width   : 60px;
+			height  : 180px;
+			margin-left : 5px;
+			position      : relative;
+			border-radius : 40% 40% 10% 10%;
+			background    : darkgreen;
+			text-align    : center;
+			/*overflow-x    : hidden;*/
+		}
+
+		.bottle:after , .bottle:before {
+			display  : block;
+			content  : "";
+			position : absolute;
+			z-index  : -1;
+		}
+
+		.bottle:after {
+			width  : 20px;
+			height : 50px;
+			background : inherit;
+			bottom : 97%;
+			left   : 20px;
+		}
+
+		.bottle:before {
+			width  : 24px;
+			height : 15px;
+			background : inherit;
+			top    : -44px;
+			left   : 18px;	
+			border-radius: 20%;
+		}
+
+		.water {
+			position : absolute;
+			/*top      : 160px;*/
+			top      : 40px;
+			left     : 0;
+			right    : 0;
+			bottom   : 0;
+			background : white;
+			z-index    : 1;
+			border-radius     : 0 0 10px 10px;
+			-webkit-animation : up 3.5s linear infinite;
+		}
+
+		.bottle span {
+			position   : absolute;
+			top        : 80px; 
+			left       : 20px;
+			font-size  : 80px;
+			font-family: Droid;
+			color      : darkgreen;
+			text-transform : uppercase;
+			z-index    : 1;
+
+		}
+
+
+
+		@-webkit-keyframes up {
+            to {
+               /*top : 60px;*/
+            }
+        }
+
+        @-webkit-keyframes move {
+        	0%   { -webkit-transform: translateY(0) rotate(0deg)  }
+        	100% { -webkit-transform: translateY(-10px) rotate(5deg) }
+        }
+
+        @font-face {
+        	src : url('Droid.otf');
+        	font-family : Droid;
+        }
+
+	</style>
+</head>
+<body>
+	<div class="bottle">
+		<div class="water"></div>
+		<span>l</span>
+	</div>
+	<div class="bottle">
+		<div class="water"></div>
+		<span>o</span>
+	</div>
+	<div class="bottle">
+		<div class="water"></div>
+		<span>a</span>
+	</div>
+	<div class="bottle">
+		<div class="water"></div>
+		<span>d</span>
+	</div>
+	<div class="bottle">
+		<div class="water"></div>
+		<span>i</span>
+	</div>
+	<div class="bottle">
+		<div class="water"></div>
+		<span>n</span>
+	</div>
+	<div class="bottle">
+		<div class="water"></div>
+		<span>g</span>
+	</div>
+</body>
+</html>
