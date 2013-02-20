@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8" />
+    <title>flag loading</title>
+</head>
+    <style type="text/css">
+        * {
+          padding : 0;
+          margin  : 0;
+          border  : 0;
+        }
+
+        div.back {
+            position : fixed;
+            top      : 0;
+            bottom   : 0;
+            left     : 0;
+            right    : 0;
+
+            background-image   : url('http://mseyedi.ir/pic/bg.gif');
+            -webkit-animation  : scroll 30s infinite linear;
+            -moz-animation     : scroll 30s infinite linear;
+            -ms-animation      : scroll 30s infinite linear;
+            -o-animation       : scroll 30s infinite linear;
+        }
+
+        ul:after , ul:before {
+            display : table;
+            content : " ";
+        }
+
+        ul:after {
+            clear : both;
+        }
+
+        ul {
+            list-style-type : none;
+            width           : 550px;
+            margin          : 100px auto;
+        }
+
+        li {
+            float        : left;
+            width        : 72px;
+            height       : 125px;
+            padding-top  : 17px;
+            text-align   : center;
+
+            margin-left  :-3px;
+
+            background: -moz-linear-gradient(left,  rgba(229,229,229,1) 0%, rgba(255,255,255,1) 50%, rgba(229,229,229,1) 99%);
+            background: -webkit-linear-gradient(left,  rgba(229,229,229,1) 0%,rgba(255,255,255,1) 50%,rgba(229,229,229,1) 99%);
+            background: -o-linear-gradient(left,  rgba(229,229,229,1) 0%,rgba(255,255,255,1) 50%,rgba(229,229,229,1) 99%);
+            background: -ms-linear-gradient(left,  rgba(229,229,229,1) 0%,rgba(255,255,255,1) 50%,rgba(229,229,229,1) 99%);
+
+            background-size : 144px 100%;
+
+            font-size    : 95px;
+            font-family  : 'Droid';
+
+            -webkit-transform : rotate(-15deg) skew(-15deg) ;
+            -moz-transform    : rotate(-15deg) skew(-15deg) ;
+            -ms-transform     : rotate(-15deg) skew(-15deg) ;
+            -o-transform      : rotate(-15deg) skew(-15deg) ;
+            -webkit-animation : dance 1.3s linear alternate infinite;
+            -moz-animation    : dance 1.3s linear alternate infinite;
+            -ms-animation     : dance 1.3s linear alternate infinite;
+            -o-animation      : dance 1.3s linear alternate infinite;
+        }
+
+        li:nth-of-type(even) {
+            background-position : 72px 0;
+            border-left  : 2px solid #ececec;
+            border-right : 2px solid #eee;
+            -webkit-transform : rotate(15deg) skew(15deg) ;
+            -moz-transform    : rotate(15deg) skew(15deg) ;
+            -o-transform      : rotate(15deg) skew(15deg) ;
+            -ms-transform     : rotate(15deg) skew(15deg) ;
+            -webkit-animation : dance-e 1.3s linear alternate infinite forwards;
+            -moz-animation    : dance-e 1.3s linear alternate infinite forwards;
+            -ms-animation     : dance-e 1.3s linear alternate infinite forwards;
+            -o-animation      : dance-e 1.3s linear alternate infinite forwards;
+        }
+
+        li:nth-child(1) { color : #cc542f;}
+        li:nth-child(2) { color : #769c2f;}
+        li:nth-child(3) { color : #c9b640;}
+        li:nth-child(4) { color : #e8554e;}
+        li:nth-child(5) { color : #38a391;}
+        li:nth-child(7) { color : #b1d202;}
+        li:nth-child(6) { color : #93d6f1;}
+
+        @-webkit-keyframes dance {
+            to {
+                background-position : -72px 0;
+                -webkit-transform   : rotate(15deg) skew(15deg) ;
+            }
+        }
+
+        @-moz-keyframes dance {
+            to {
+                background-position : -72px 0;
+                -moz-transform   : rotate(15deg) skew(15deg) ;
+            }
+        }
+
+        @-ms-keyframes dance {
+            to {
+                background-position : -72px 0;
+                -ms-transform   : rotate(15deg) skew(15deg) ;
+            }
+        }
+
+        @-o-keyframes dance {
+            to {
+                background-position : -72px 0;
+                -o-transform   : rotate(15deg) skew(15deg) ;
+            }
+        }
+
+        @-webkit-keyframes dance-e {
+            to {
+                background-position : 144px 0;
+                -webkit-transform   : rotate(-15deg) skew(-15deg) ;
+                border-left  : 2px solid #eee;
+                border-right : 2px solid #ececec;
+            }
+        }
+
+        @-moz-keyframes dance-e {
+            to {
+                background-position : 144px 0;
+                -moz-transform   : rotate(-15deg) skew(-15deg) ;
+                border-left  : 2px solid #eee;
+                border-right : 2px solid #ececec;
+            }
+        }
+
+        @-ms-keyframes dance-e {
+            to {
+                background-position : 144px 0;
+                -ms-transform   : rotate(-15deg) skew(-15deg) ;
+                border-left  : 2px solid #eee;
+                border-right : 2px solid #ececec;
+            }
+        }
+
+        @-o-keyframes dance-e {
+            to {
+                background-position : 144px 0;
+                -o-transform   : rotate(-15deg) skew(-15deg) ;
+                border-left  : 2px solid #eee;
+                border-right : 2px solid #ececec;
+            }
+        }
+
+        @-webkit-keyframes scroll {
+            to {left: -640px;}
+        }
+
+        @-moz-keyframes scroll {
+            to {left: -640px;}
+        }
+
+        @-o-keyframes scroll {
+            to {left: -640px;}
+        }
+
+        @-ms-keyframes scroll {
+            to {left: -640px;}
+        }
+
+        @font-face {
+            font-family : Droid;
+            src         : url('http://www.mseyedi.ir/fonts/Droid.otf'); 
+        }
+
+    </style>
+<body>
+    <div class="back"></div>
+	<ul>
+		<li>l</li>
+		<li>o</li>
+		<li>a</li>
+		<li>d</li>
+		<li>i</li>
+		<li>n</li>
+		<li>g</li>
+	</ul>
+</body>
+</html>
