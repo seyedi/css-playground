@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+	<title>.:: Butterfly ::.</title>
+	<style type="text/css">
+
+		body {
+			background  : #4b4b4b;
+		}
+
+		div:after , div:before {
+			display : block;
+			content : "";
+			position: absolute;
+			z-index : -1;
+		}
+
+		.body {
+			position : relative; 
+			margin   : 150px auto;
+			width    : 50px;
+			height   : 150px;
+			border-radius : 50%;
+			background : #0ff;
+			border     : 2px solid #eee;
+		}
+
+		.body:before , .body:after {
+			top    : -100px;
+			left   : 4px;
+			width  : 1px;
+			height : 60px;
+			background : #ff0;
+			-webkit-transform  : rotate(-20deg);
+		}
+
+		.body:after {
+			left  : 45px;
+			-webkit-transform  : rotate(20deg);	
+		}
+
+		.head {
+			position : absolute;
+			bottom   : 99%;
+			left     : 0;
+			width    : 50px;
+			height   : 50px;
+			border-radius : 50%;
+			background : #ff0;
+		}		
+
+		.head:before , .head:after {
+			top    : -50px;
+			left   : -10px;
+			width  : 10px;
+			height : 10px;
+			border-radius : 50%;
+			background : #ff0;
+		}
+
+		.head:after {
+			left : 50px;
+		}
+
+
+		.left  , .right{
+			width  : 50px;
+			height : 50px;
+			background : #f0f;
+			position   : absolute;
+			top        : 50px;
+			z-index    : -1;
+			-webkit-perspective : 250;
+		}
+
+		.left {
+			right : 100%;
+			-webkit-transform-origin : 100% 0;
+			-webkit-animation : l-fly .7s ease-out infinite alternate both;
+		}
+
+		.right  {
+			left : 100%;
+			-webkit-transform-origin : 0 0;
+			-webkit-animation : fly .7s ease-out infinite alternate both;
+		}
+
+		.left:before , .right:before {
+			width  : 130px;
+			height : 200px;
+			top    : -140px;
+			z-index    : -2;
+			background : #0ff;
+			border-radius : 50%/60% 60% 40% 40%;
+		}
+
+		.left:before {
+			right  : 0;
+			-webkit-transform : rotate(150deg);
+			box-shadow : inset -5px -5px 5px 1px magenta;
+		}
+
+		.right:before {
+			left   : 0;
+			-webkit-transform : rotate(-150deg);
+			box-shadow : inset 5px -5px 5px 1px magenta;
+		}
+
+		.left:after , .right:after {
+			width  : 100px;
+			height : 160px;
+			top    : -20px;
+			z-index    : -2;
+			background : #0ff;
+			border-radius         : 50%/60% 60% 40% 40%;
+		}
+
+		.left:after {
+			right  : 20px;
+			-webkit-transform : rotate(70deg);
+			box-shadow : inset -1px -5px 5px 1px magenta;
+		}
+
+
+		.right:after {
+			left   : 20px;
+			-webkit-transform : rotate(-70deg);
+			box-shadow : inset 1px -5px 5px 1px magenta;
+		}
+
+		.front {
+			position : absolute;
+			top      : -90px;
+			left     : -50px;
+			z-index  : 2;
+			width  : 50px;
+			height : 50px;
+			border-radius : 50%;
+			background : #f00;
+			box-shadow : 0 0 0 10px #ff0 , 0 120px 0 -10px #0c0 , 0 120px 0 0 #fff;
+		}
+
+		.right .front {
+			left     : 50px;
+		}
+
+		@-webkit-keyframes fly {
+			100% {
+			    -webkit-transform  : rotateY(60deg);
+			}
+		}
+
+		@-webkit-keyframes l-fly {
+			100% {
+			    -webkit-transform  : rotateY(60deg);
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<div class="body">
+		<div class="head"></div>
+		<div class="left">
+			<div class="front"></div>
+		</div>
+		<div class="right">
+			<div class="front"></div>
+		</div>
+	</div>
+</body>
+</html>
